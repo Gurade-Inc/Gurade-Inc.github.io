@@ -29,9 +29,9 @@ function MainComponent() {
       description:
         "ChatGPT, Gemini, Claude等の生成AIを用いた業務効率化ツールを開発する",
       achievements:
-        "会話の動画・音声データを用いた自動採点・添削AIツールの開発など多数経験。また、本HPも全て生成AIによって作成している",
+        "会話の音声データを用いた自動添削ツールの開発、本HPの作成など多数経験",
       addedValue:
-        "プロンプトエンジニアリングにとどまらず、各種サービスのAPIを用いて複雑な連携処理を可能にするプロダクトを提供する",
+        "プロンプト設計にとどまらず、各種APIを用いて複雑な連携処理を行うプロダクトを提供する",
       image:
         "./static/img/generative_ai.png", // Replace with actual path to image
     },
@@ -244,7 +244,7 @@ function MainComponent() {
             {services.map((service, index) => (
               <li
                 key={index}
-                className="relative p-8 border border-[#b0b6b3] bg-white rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-sm text-black animated-slideIn"
+                className="relative p-8 border border-[#b0b6b3] bg-white rounded-lg shadow-xl transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl w-full max-w-sm text-black animated-slideIn group"
                 onClick={() => handleClick(service)}
               >
                 <div className="flex items-center justify-center">
@@ -276,6 +276,9 @@ function MainComponent() {
                     {service.title}
                   </h3>
                   <p className="text-sm text-gray-600">{service.description}</p>
+                  <button className="mt-4 px-5 py-2 bg-gray-300 text-black rounded-full transition-all duration-200 md:opacity-0 group-hover:opacity-100">
+                    詳細
+                  </button>
                 </div>
               </li>
             ))}
