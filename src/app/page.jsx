@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import Head from 'next/head';
+import Script from 'next/script';
 
 
 function MainComponent() {
@@ -87,11 +87,8 @@ function MainComponent() {
 
   return (
     <div className="bg-gradient-to-r from-[#CBD0CE] to-[#ffffff] text-black font-roboto min-h-screen">
-       <Head>
-        <script src="https://kit.fontawesome.com/95692b9b1f.js" crossorigin="anonymous"></script>
-      </Head>
-      <header className="flex flex-row justify-between items-center p-6">
       <link rel="icon" type="image/x-icon" href="./static/img/favicon.ico" />
+      <header className="flex flex-row justify-between items-center p-6">
         <div className="flex items-center">
           <img
             src="./static/img/logo.png"
@@ -251,6 +248,13 @@ function MainComponent() {
                 onClick={() => handleClick(service)}
               >
                 <div className="flex items-center justify-center">
+                {isClient && (
+                  <Script
+                    src="https://use.fontawesome.com/releases/v6.6.0/js/all.js"
+                    strategy="lazyOnload"
+                    crossOrigin="anonymous"
+                  />
+                )}
                   <i
                     className={`fas ${
                       index === 0
