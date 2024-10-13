@@ -7,9 +7,9 @@ function MainComponent() {
   const services = [
     {
       title: "データ分析",
-      description: "あらゆるデータを用いてビジネスインサイトを導く",
+      description: "あらゆるデータを価値に変換し、高度なビジネスインサイトを導く",
       achievements:
-        "大手テック企業のビッグデータ分析、自治体関連データ分析、SNS, Youtube等のスクレイピングデータを用いたデータ分析など経験多数",
+        "大手テック企業のビッグデータ分析、自治体関連データ分析、SNS/Youtube等のスクレイピングデータを用いたデータ分析など多数経験",
       addedValue:
         "「単なる示唆」にとどまらない意思決定に直結するデータ分析をお届けする",
       image:
@@ -19,7 +19,7 @@ function MainComponent() {
       title: "機械学習モデル構築",
       description: "ビッグデータを用いて独自の機械学習モデルを構築する",
       achievements:
-        "小売店舗の需要予測、ECサイトのレコメンデーション、クーポンの配布の最適化、教育現場の児童の行動予測など経験多数",
+        "小売店舗の需要予測、ECサイトのレコメンデーション、クーポンの配布の最適化、教育現場の児童の行動予測など多数経験",
       addedValue: "精度と運用のバランスを保った現実的なモデルを開発する",
       image:
         "./static/img/machine_learning.png", // Replace with actual path to image
@@ -29,9 +29,9 @@ function MainComponent() {
       description:
         "ChatGPT, Gemini, Claude等の生成AIを用いた業務効率化ツールを開発する",
       achievements:
-        "会話の動画・音声データを用いた自動採点・添削AIツールを開発。また、本HPも全て生成AIによって作成している",
+        "会話の動画・音声データを用いた自動採点・添削AIツールの開発など多数経験。また、本HPも全て生成AIによって作成している",
       addedValue:
-        "プロンプトエンジニアリングにとどまらず、各種サービスのAPIを用いて複雑な連携処理を可能にするプロダクトを提供させていただく",
+        "プロンプトエンジニアリングにとどまらず、各種サービスのAPIを用いて複雑な連携処理を可能にするプロダクトを提供する",
       image:
         "./static/img/generative_ai.png", // Replace with actual path to image
     },
@@ -39,18 +39,18 @@ function MainComponent() {
       title: "DXコンサル",
       description:
         "ビジネス価値を最大化するためテクノロジーの活用方法を提案する",
-      achievements: "マーケティングコンサル事業社に対するDXコンサルを実施",
+      achievements: "マーケティングコンサル事業社に対するDXコンサルなど多数経験",
       addedValue:
-        "丁寧なヒアリングをもとに適切に構造分解をし、課題の発見、打ち手の方針を検討・整理させていただく",
+        "丁寧なヒアリングをもとに適切に構造分解をし、課題の発見、打ち手の方針を検討・整理する",
       image:
         "./static/img/dx.png", // Replace with actual path to image
     },
     {
       title: "インセンティブマーケティングコンサル",
       description: "ポイント・クーポン等を用いた集客施策の効果検証設計を行う",
-      achievements: "大手テック企業におけるインセンティブ施策を設計",
+      achievements: "大手テック企業におけるインセンティブ施策の設計など多数経験",
       addedValue:
-        "高度な統計学の知識を用いることで、A/Bテストが不可能な状況においても妥当な検証を行うことができる",
+        "高度な統計学の知識を用いることで、A/Bテストが不可能な状況においても、限りある条件下で最も妥当な検証を行う",
       image:
         "./static/img/incentive.png", // Replace with actual path to image
     },
@@ -58,7 +58,7 @@ function MainComponent() {
       title: "KPI設計コンサル",
       description:
         "プロダクトマネジメントおよびデータサイエンスのノウハウに基づき、事業戦略に即したKPI設計・マネジメント について検討のサポートをする",
-      achievements: "大手テック企業におけるKPI設計を担当",
+      achievements: "大手テック企業におけるKPI設計など多数経験",
       addedValue:
         "単にKPIを作るだけでなく、データドリブンな意思決定が可能になる組織体制・運用から設計する",
       image:
@@ -128,7 +128,7 @@ function MainComponent() {
           </ul>
         </nav>
       </header>
-      <main className="text-center mt-20">
+      <main className="text-center mt-10">
         <div
           className="relative w-full h-[400px] -mt-8"
           style={{
@@ -147,7 +147,7 @@ function MainComponent() {
             </h1>
           </div>
         </div>
-        <section className="mt-20 p-6">
+        <section className="mt-20 max-w-[1400px] mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-black" id="policy">
             理念
           </h2>
@@ -236,7 +236,7 @@ function MainComponent() {
             </div>
           </div>
         </section>
-        <section className="mt-20">
+        <section className="mt-20 max-w-[1400px] mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-black" id="service">
             主要サービス
           </h2>
@@ -281,7 +281,7 @@ function MainComponent() {
             ))}
           </ul>
         </section>
-        <section className="mt-20 p-6">
+        <section className="mt-20 max-w-[900px] mx-auto">
           <h2 className="text-4xl font-bold mb-8 text-black" id="about">
             会社概要
           </h2>
@@ -308,7 +308,7 @@ function MainComponent() {
                 </dd>
               </div>
               <div className="flex flex-col md:flex-row items-center md:justify-between md:p-4 p-2 border-b border-[#b0b6b3]">
-                <dt className="font-bold md:w-1/3 w-full">会社の所在地</dt>
+                <dt className="font-bold md:w-1/3 w-full">所在地</dt>
                 <dd className="md:w-2/3 w-full">150-0043 東京都渋谷区道玄坂1-16-6 二葉ビル8B</dd>
               </div>
               <div className="flex flex-col md:flex-row items-center md:justify-between md:p-4 p-2 border-b border-[#b0b6b3]">
@@ -356,7 +356,7 @@ function MainComponent() {
                 <img
                   src={popupContent.image}
                   alt={`${popupContent.title}のイメージ`}
-                  className="w-full h-auto max-w-xs rounded-lg"
+                  className="w-[90%] h-auto max-w-[80%] rounded-lg"
                 />
               </div>
               <div className="md:w-[60%] p-6 pt-2 flex flex-col text-left space-y-2">
@@ -388,17 +388,23 @@ function MainComponent() {
                   ></i>
                   <h3 className="text-2xl font-bold">{popupContent.title}</h3>
                 </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">概要</h4>
-                  <p>{popupContent.description}</p>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">強み</h4>
-                  <p>{popupContent.addedValue}</p>
-                </div>
-                <div>
-                  <h4 className="text-xl font-bold mb-2">実績</h4>
-                  <p>{popupContent.achievements}</p>
+                <div className="pt-2">
+                  <table className="table-fixed w-full">
+                    <tbody>
+                      <tr className="border-b">
+                        <td className="p-2 font-semibold w-1/4">概要</td>
+                        <td className="p-2">{popupContent.description}</td>
+                      </tr>
+                      <tr className="border-b">
+                        <td className="p-2 font-semibold w-1/4">強み</td>
+                        <td className="p-2">{popupContent.addedValue}</td>
+                      </tr>
+                      <tr>
+                        <td className="p-2 font-semibold w-1/4">実績</td>
+                        <td className="p-2">{popupContent.achievements}</td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
